@@ -4,6 +4,7 @@ import person
 def test_person_contructor():
     bruce = person.Person('Bruce', 'Programmer', 125000)
     assert bruce.name == 'Bruce'
+    assert bruce.company_name == "Cboe"
 
 
 def test_person_constructor_defaults():

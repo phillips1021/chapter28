@@ -2,6 +2,9 @@ class Person:
     """
     Models a Person
     """
+
+    company_name = "Cboe"
+
     def __init__(self, name, job=None, pay=0):
         self.name = name
         self.job = job
@@ -19,4 +22,4 @@ class Person:
         self.pay = int(self.pay * (1 + percent))
 
     def __repr__(self):
-        return '[Person: %s %s %s]' % (self.name, self.job, self.pay)
+        return '[Person: %s %s %s %s]' % (Person.company_name, self.name, self.job, self.pay)
