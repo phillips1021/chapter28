@@ -24,10 +24,9 @@ class Person:
         """
         self.pay = int(self.pay * (1 + percent))
 
+    @staticmethod
     def get_number_of_people():
         return Person.number_of_people
-
-    get_number_of_people = staticmethod(get_number_of_people)
 
     def __repr__(self):
         return '[Person: %s %s %s %s - Total People: %s]' \
